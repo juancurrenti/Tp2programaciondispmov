@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        MainViewModel viewModel = new MainViewModel(); // Asumiendo que has creado una instancia de tu ViewModel aquí.
+        MainViewModel viewModel = new MainViewModel();
         viewModel.cargarDatos();
         viewModel.getLista().observe(this, lista -> {
             ListaAdapter adapter = new ListaAdapter(this, R.layout.item, lista, getLayoutInflater());

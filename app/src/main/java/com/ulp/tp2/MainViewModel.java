@@ -19,6 +19,6 @@ public class MainViewModel extends ViewModel {
         tempLista.add(new Inmueble(R.drawable.casa3, "Juana Koslay", 70000));
         tempLista.add(new Inmueble(R.drawable.casa4, "San Francisco", 60000));
         tempLista.add(new Inmueble(R.drawable.casa5, "La Punta", 90000));
-        lista.setValue(tempLista); // Actualiza el LiveData con la nueva lista
+        lista.setValue(tempLista);
     }
 }
